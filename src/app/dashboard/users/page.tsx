@@ -1,11 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import Search from '../ui/dashboard/search/search'
 
 export default function Users() {
   return (
     <div className='bg-[#182237] p-[20px] rounded-[10x] mt-[10px]'>
       <div className='flex items-center justify-between'>
+        <Search placeholder='Search for a user...'/>
         <Link href='/dashboard/users/add'>
             <button className='p-[10px] bg-[#5d57c9]  text-white rounded-md cursor-pointer'>Add New</button>
         </Link>
@@ -31,6 +33,7 @@ export default function Users() {
             </td>
             <td>john@gmail.com</td>
             <td>19.04.2024</td>
+            <td>Admin</td>
             <td>active</td>
             <td>
               <div className='flex gap-[10px]'>
