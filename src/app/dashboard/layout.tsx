@@ -20,7 +20,9 @@ export default function RootLayout({
       </div>
       <div className="flex-[4_4_0%] ">
         <Navbar/>
+      <div className="p-[20px]">
       {children}
+      </div>
       </div>
     </div>
   );
